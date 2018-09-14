@@ -16,7 +16,7 @@ ENV PATH $PATH:$M2_HOME/bin
 RUN curl -s https://raw.githubusercontent.com/isaacs/nave/master/nave.sh > /usr/local/bin/nave
 RUN chmod +x /usr/local/bin/nave
 RUN nave usemain latest
-
+ 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 VOLUME ["/shared"]
